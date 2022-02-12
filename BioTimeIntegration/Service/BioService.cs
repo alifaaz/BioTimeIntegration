@@ -45,7 +45,7 @@ namespace BioTimeIntegration.Service
 
 
 
-            var responAbsense = await _resApi.GetAsync<Response<PresentResponse>>($"{GetPresent}?page={param.page}&page_size={param.page_size}", token);
+            var responAbsense = await _resApi.GetAsync<Response<PresentResponse>>($"{GetPresent}?page={param.page}&page_size={param.page_size}&start_date={param.start_date}&end_date={param.end_date}&departments={param.departments}", token);
 
             return responAbsense;
 
